@@ -59,18 +59,21 @@ def show_all_cars():
         print_cars("You have not any car!")
 
 def add_new_car():
-    name = get_user_input("Enter car's name: ")
-    color = get_user_input("Enter car's color: ")
-    rental_price = get_user_input("Enter car's rental price: ")
+    name = get_user_input("Enter car's name:")
+    color = get_user_input("Enter car's color:")
+    rental_price = get_user_input("Enter car's rental price:")
     add_cars(name, color, rental_price,)
 
 def update_car():
     show_all_cars()
     car_id = get_user_input("Enter car's new id:")
-    name = get_user_input("Enter car's new name: ")
-    color = get_user_input("Enter car's new color: ")
-    rental_price = get_user_input("Enter car's new rental price: ")
+    name = get_user_input("Enter car's new name:")
+    color = get_user_input("Enter car's new color:")
+    rental_price = get_user_input("Enter car's new rental price:")
     update_cars(car_id,name, color, rental_price,)   
+
+def hi():
+    print("hi!")
 
 if __name__ == "__main__":
     main_menu()
