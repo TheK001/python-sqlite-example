@@ -42,3 +42,6 @@ def delete_car(car_id):
     cursor.execute('DELETE FOROM cars WHERE id = ?', (car_id))
     conn.commit()
     conn.close()
+
+def new_file():
+    print("hi")
